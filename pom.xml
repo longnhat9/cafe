@@ -10,7 +10,6 @@
     <packaging>jar</packaging> <!-- Chỉnh packaging thành jar -->
 
     <name>cafe</name>
-    <url>http://maven.apache.org</url>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source> <!-- Chỉnh phiên bản Java -->
@@ -21,17 +20,19 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>vn.viettuts.cafe.App</mainClass> <!-- Chỉnh path.to.your.MainClass thành class chứa hàm main -->
-                        </manifest>
-                    </archive>
-                </configuration>
+            <!-- Build an executable JAR -->
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>3.1.0</version>
+            <configuration>
+                <archive>
+                <manifest>
+                    <addClasspath>true</addClasspath>
+                    <classpathPrefix>lib/</classpathPrefix>
+                    <mainClass>vn.viettuts.cafe.App</mainClass>
+                </manifest>
+                </archive>
+            </configuration>
             </plugin>
         </plugins>
     </build>
