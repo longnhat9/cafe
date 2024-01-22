@@ -1,9 +1,15 @@
+vn\viettuts\cafe\entity\ProductXML.class
 vn\viettuts\cafe\dao\UserDao.class
+vn\viettuts\cafe\entity\Order.class
 vn\viettuts\cafe\controller\LoginController.class
+vn\viettuts\cafe\entity\Product.class
 vn\viettuts\cafe\entity\User.class
+vn\viettuts\cafe\view\CafeManagerView.class
 vn\viettuts\cafe\App.class
 vn\viettuts\cafe\App$1.class
+vn\viettuts\cafe\controller\CafeManagerController.class
 vn\viettuts\cafe\controller\LoginController$LoginListener.class
 vn\viettuts\cafe\controller\ProductManagerController.class
 vn\viettuts\cafe\view\LoginView.class
 vn\viettuts\cafe\utils\FileUtils.class
+vn\viettuts\cafe\view\ProductManagerView.class

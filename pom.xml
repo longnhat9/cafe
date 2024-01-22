@@ -7,14 +7,34 @@
     <groupId>vn.viettuts</groupId>
     <artifactId>cafe-swing</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>jar</packaging> <!-- Chỉnh packaging thành jar -->
 
     <name>cafe</name>
     <url>http://maven.apache.org</url>
 
     <properties>
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- Chỉnh phiên bản Java -->
+        <maven.compiler.target>1.8</maven.compiler.target> <!-- Chỉnh phiên bản Java -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>vn.viettuts.cafe.App</mainClass> <!-- Chỉnh path.to.your.MainClass thành class chứa hàm main -->
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!-- JAXB API -->
