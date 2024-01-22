@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<products>
+    <product>
+        <name>Cafe bạc xỉu</name>
+        <price>5000.0</price>
+    </product>
+    <product>
+        <name>Cafe có đường</name>
+        <price>10000.0</price>
+    </product>
+    <product>
+        <name>n</name>
+        <price>8000.0</price>
+    </product>
+    <product>
+        <name>b</name>
+        <price>5.0</price>
+    </product>
+    <product>
+        <name>i</name>
+        <price>8.0</price>
+    </product>
+    <product>
+        <name>kp</name>
+        <price>9.0</price>
+    </product>
+    <product>
+        <name>y</name>
+        <price>8.0</price>
+    </product>
+</products>
